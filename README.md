@@ -1,7 +1,14 @@
-# CVE-ID
+# Undisclosed Zero Day (FreePBX)
+
+Overview of this vulnerability quoted from @jfinstrom [here](https://gist.github.com/jfinstrom/60011630ed586a79f5b9c78313e0d708#file-freepbx-vulnerability-aug-2026-md)
+> - Around 2025-08-21 multiple FreePBX systems began showing errors and later confirmed compromises.
+> - Vendor (Sangoma/FreePBX Security Team) published an advisory on 2025-08-26 urging administrators to restrict public access to the Administrator Control Panel and offering EDGE module fixes.
+> - The vulnerability is associated with the commercial Endpoint Manager (Endpoint) and appears to be an unauthenticated privilege escalation/RCE that can be exploited when the Administrator UI is exposed to hostile networks.
+> - The EDGE fix prevents new exploitation but does not clean already-compromised systems.
 
 ## How does this detection method work?
 
+This template sends a request to the FreePBX admin panel, extracts the version, and flags it as vulnerable if it falls within the affected version ranges of the newly disclosed zero-day (16.0.0.0–16.0.88.19 or 17.0.0.0–17.0.2.31).
 
 ## How do I run this script?
 
@@ -9,13 +16,10 @@
 2. Copy the template to your local system
 3. Run the following command: `nuclei -u https://yourHost.com -t template.yaml` 
 
-### Example Output
-
-
-
 ## References
 
-- 
+- https://community.freepbx.org/t/endpointmanager-aug-2025-zero-day/107215
+- https://www.bleepingcomputer.com/news/security/freepbx-servers-hacked-via-zero-day-emergency-fix-released/
 
 
 ## Disclaimer
