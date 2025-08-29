@@ -1,4 +1,4 @@
-# Undisclosed Zero Day affecting FreePBX
+# CVE-2025-57819
 
 Overview of this vulnerability quoted from @jfinstrom [here](https://gist.github.com/jfinstrom/60011630ed586a79f5b9c78313e0d708#file-freepbx-vulnerability-aug-2026-md)
 > - Around 2025-08-21 multiple FreePBX systems began showing errors and later confirmed compromises.
