@@ -1,10 +1,10 @@
-id: freepbx-zeroday-august25
+id: CVE-2025-57819
 
 info:
-  name: FreePBX Zero Day
+  name: CVE-2025-57819
   author: rxerium
   severity: critical
-  description: Nuclei template to detect recently disclosed zero day vulnerability affecting FreePBX.
+  description: Nuclei template to detect recently disclosed zero day vulnerability affecting FreePBX - CVE-2025-57819
   metadata:
     verified: true
     max-request: 1
